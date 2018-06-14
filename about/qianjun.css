@@ -1,0 +1,48 @@
+body {
+	padding: 0;
+	margin: 0 auto;
+	width: 700px;
+	height: 900px;
+	/*background-color: bisque;*/
+}
+
+
+#myhead {
+	/*width: 100%;*/
+	height: 90px;
+	border: dashed;
+	background-color: coral;
+}
+
+
+h1 {
+	text-align: center;
+	color: red;
+}
+
+
+#mybody {
+	padding: 20px;
+	height: 800px;
+	background-color: blanchedalmond;
+}
+
+
+img {
+	width: 250px;
+	height: 200px;
+}
+
+
+#myphoto {
+	float: right;
+	
+}
+
+footer {
+	height: 50px;
+	background-color: burlywood;
+	font-size: 12px;
+	font-family: "bodoni mt black";
+	text-align: center;
+}
