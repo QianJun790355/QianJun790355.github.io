@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="个人总结 经过这几天博客的制作，从无到有，让我有很大的感触，当你做完每一个步骤或写完一段代码，回过头去看看，这每一次的制作过程都像一次轮回。这是我对这次博客制作过程中遇到的问题，以及一些相关的命令的总结。 制作时用到的命令“hexo”这是我第一个所接触到的命令。 hexo是什么？官方定义是快速、简洁且高效的博客框架，实际不仅仅于此，它是一个JS语言编写的静态网站生成器，主要作用是解析Markdow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="总结">
+<meta property="og:url" content="http://yoursite.com/2018/06/19/总结/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="个人总结 经过这几天博客的制作，从无到有，让我有很大的感触，当你做完每一个步骤或写完一段代码，回过头去看看，这每一次的制作过程都像一次轮回。这是我对这次博客制作过程中遇到的问题，以及一些相关的命令的总结。 制作时用到的命令“hexo”这是我第一个所接触到的命令。 hexo是什么？官方定义是快速、简洁且高效的博客框架，实际不仅仅于此，它是一个JS语言编写的静态网站生成器，主要作用是解析Markdow">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-06-19T03:04:27.294Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="总结">
+<meta name="twitter:description" content="个人总结 经过这几天博客的制作，从无到有，让我有很大的感触，当你做完每一个步骤或写完一段代码，回过头去看看，这每一次的制作过程都像一次轮回。这是我对这次博客制作过程中遇到的问题，以及一些相关的命令的总结。 制作时用到的命令“hexo”这是我第一个所接触到的命令。 hexo是什么？官方定义是快速、简洁且高效的博客框架，实际不仅仅于此，它是一个JS语言编写的静态网站生成器，主要作用是解析Markdow">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/06/19/总结/"/>
+
+
+
+
+
+  <title>总结 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-resources">
+          <a href="/resources" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-download"></i> <br />
+            
+            资源
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/19/总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Shi Guang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-19T09:23:43+08:00">
+                2018-06-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h1><hr>
+<p>经过这几天博客的制作，从无到有，让我有很大的感触，当你做完每一个步骤或写完一段代码，回过头去看看，这每一次的制作过程都像一次轮回。这是我对这次博客制作过程中遇到的问题，以及一些相关的命令的总结。</p>
+<h2 id="制作时用到的命令"><a href="#制作时用到的命令" class="headerlink" title="制作时用到的命令"></a>制作时用到的命令</h2><p><strong>“hexo”这是我第一个所接触到的命令。</strong></p>
+<p>hexo是什么？官方定义是快速、简洁且高效的博客框架，实际不仅仅于此，它是一个JS语言编写的静态网站生成器，主要作用是解析Markdown语法，并配合模板引擎，快速生成静态网站。同时，还可以自定义主题，引用第三方插件，除了搭建个人博客之外，Hexo还被许许多多的项目拿来生成API文档，如著名开源项目VueJS、Weex、Egg等等。</p>
+<p><strong>Hexo 最常用的几个命令</strong></p>
+<figure class="highlight plain"><figcaption><span>g</span><a href="//generetor的缩写```">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```hexo s //server的缩写</span><br></pre></td></tr></table></figure>
+<p><em>hexo s 启动本地服务器，用于预览主题。</em></p>
+<pre><code>hexo s 是 hexo server 的缩写，命令效果一致；
+预览的同时可以修改文章内容或主题代码，保存后刷新页面即可；
+对 Hexo 根目录 _config.yml 的修改，需要重启本地服务器后才能预览效果。
+</code></pre><p><em>hexo d 自动生成网站静态文件，并部署到设定的仓库。</em></p>
+<pre><code>hexo d 是 hexo deploy 的缩写，命令效果一致。
+</code></pre><p><em>hexo clean 清除缓存文件 db.json 和已生成的静态文件 public 。</em></p>
+<pre><code>网站显示异常时可以执行这条命令试试
+</code></pre><p><em>hexo g 生成网站静态文件到默认设置的 public 文件夹。</em></p>
+<pre><code>便于查看网站生成的静态文件或者手动部署网站；
+如果使用自动部署，不需要先执行该命令；
+hexo g 是 hexo generate 的缩写，命令效果一致。
+</code></pre><p><em>hexo new page</em> </p>
+<pre><code>hexo new page aboutme
+</code></pre><p>新建一个标题为 aboutme 的页面，默认链接地址为 主页地址/aboutme/</p>
+<pre><code>标题可以为中文，但一般习惯用英文；
+页面标题和文章一样可以随意修改；
+页面不会出现在首页文章列表和归档中，也不支持设置分类和标签。
+</code></pre><h2 id="hexo配置"><a href="#hexo配置" class="headerlink" title="hexo配置"></a>hexo配置</h2><p>使用以下命令下载hexo</p>
+<pre><code>$ npm install hexo-cli -g
+</code></pre><p>如果在安装过程中遇到以下错误</p>
+<pre><code>ERROR Deployer not found : github
+</code></pre><p>则运行以下命令,或者你直接先运行这个命令更好。</p>
+<pre><code>$ npm install hexo-deployer-git --save
+</code></pre><p>新建hexo的文件夹，以后的博客相关的操作都在这个文件夹里边，不要有中文目录。在该文件夹内部执行下面命令</p>
+<pre><code>$ hexo init
+</code></pre><p>安装依赖包</p>
+<pre><code>$ npm install
+</code></pre><h2 id="github使用步骤"><a href="#github使用步骤" class="headerlink" title="github使用步骤"></a>github使用步骤</h2><p><strong>什么是 Github?</strong></p>
+<p>github是一个基于git的代码托管平台，付费用户可以建私人仓库，我们一般的免费用户只能使用公共仓库，也就是代码要公开。</p>
+<p>Github 由Chris Wanstrath, PJ Hyett 与Tom Preston-Werner三位开发者在2008年4月创办。迄今拥有59名全职员工，主要提供基于git的版本托管服务。</p>
+<p><strong>注册账户以及创建仓库</strong> </p>
+<p><em>要想使用github第一步当然是注册github账号了， github官网地址：<a href="https://github.com/。" target="_blank" rel="noopener">https://github.com/。</a> 之后就可以创建仓库了（免费用户只能建公共仓库），Create a New Repository，填好名称后Create，之后会出现一些仓库的配置信息，这也是一个git的简单教程。</em> </p>
+<p><strong>配置Git</strong> </p>
+<p> 首先在本地创建ssh key；</p>
+<pre><code>$ ssh-keygen -t rsa -C &quot;your_email@youremail.com&quot;
+</code></pre><p>后面的<a href="mailto:your_email@youremail.com" target="_blank" rel="noopener">your_email@youremail.com</a>改为你在github上注册的邮箱，之后会要求确认路径和输入密码，我们这使用默认的一路回车就行。成功的话会在~/下生成.ssh文件夹，进去，打开id_rsa.pub，复制里面的key。</p>
+<p>回到github上，进入 Account Settings（账户配置），左边选择SSH Keys，Add SSH Key,title随便填，粘贴在你电脑上生成的key。</p>
+<p>为了验证是否成功，在git bash下输入：</p>
+<pre><code>$ ssh -T git@github.com
+</code></pre><p>如果是第一次的会提示是否continue，输入yes就会看到：You’ve successfully authenticated, but GitHub does not provide shell access 。这就表示已成功连上github。</p>
+<p>这就是我所记得的GitHub步骤，可能不详细，所以请参考<a href="http://www.runoob.com/w3cnote/git-guide.html" target="_blank" rel="noopener">http://www.runoob.com/w3cnote/git-guide.html</a></p>
+<h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><p><strong>宗旨</strong></p>
+<p>Markdown 的目标是实现「易读易写」。</p>
+<p>可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，而最大灵感来源其实是纯文本电子邮件的格式。</p>
+<p>总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像<em>强调</em>。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。</p>
+<p><strong>段落和换行</strong></p>
+<p>一个 Markdown 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（空行的定义是显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行）。普通段落不该用空格或制表符来缩进。</p>
+<p>「由一个或多个连续的文本行组成」这句话其实暗示了 Markdown 允许段落内的强迫换行（插入换行符），这个特性和其他大部分的 text-to-HTML 格式不一样（包括 Movable Type 的「Convert Line Breaks」选项），其它的格式会把每个换行符都转成 <br> 标签。</p>
+<p>如果你确实想要依赖 Markdown 来插入 <br> 标签的话，在插入处先按入两个以上的空格然后回车。</p>
+<p>的确，需要多费点事（多加空格）来产生 <br> ，但是简单地「每个换行都转换为 <br>」的方法在 Markdown 中并不适合， Markdown 中 email 式的 区块引用 和多段落的 列表 在使用换行来排版的时候，不但更好用，还更方便阅读。</p>
+<p><strong>标题</strong></p>
+<figure class="highlight markdown"><figcaption><span>支持两种标题的语法，类 Setext 和类 atx 形式。```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="bullet">1. </span>Setext 形式是用底线的形式，利用 = （最高阶标题）和 - （第二阶标题）</span><br><span class="line"><span class="bullet">2. </span>Atx 形式则是在行首插入 1 到 6 个 # ，对应到标题 1 到 6 阶</span><br><span class="line"></span><br><span class="line"><span class="strong">**列表**</span></span><br><span class="line"></span><br><span class="line"><span class="code">```Markdown 支持有序列表和无序列表。</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>无序列表使用星号、加号或是减号作为列表标记</li>
+<li>有序列表则使用数字接着一个英文句点</li>
+</ul>
+<p>这些就是我刚掌握的markdown语法，我知道只是不够的，所以请大家参考<a href="https://www.appinn.com/markdown/#p学习。" target="_blank" rel="noopener">https://www.appinn.com/markdown/#p学习。</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/13/博客简介/" rel="next" title="博客简介">
+                <i class="fa fa-chevron-left"></i> 博客简介
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzMwNC8xMzgzOA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpeg"
+                alt="Shi Guang" />
+            
+              <p class="site-author-name" itemprop="name">Shi Guang</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#个人总结"><span class="nav-number">1.</span> <span class="nav-text">个人总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#制作时用到的命令"><span class="nav-number">1.1.</span> <span class="nav-text">制作时用到的命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo配置"><span class="nav-number">1.2.</span> <span class="nav-text">hexo配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#github使用步骤"><span class="nav-number">1.3.</span> <span class="nav-text">github使用步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown语法"><span class="nav-number">1.4.</span> <span class="nav-text">Markdown语法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Shi Guang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  <link rel="stylesheet" href="/dist/APlayer.min.css">
+<div id="aplayer"></div>
+<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+<script type="text/javascript" src="/dist/music.js"></script>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+</body>
+</html>
+
+
